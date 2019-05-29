@@ -64,8 +64,20 @@
     <Compile Include="Migrations\201905292214300_AddProductMigration.Designer.cs">
       <DependentUpon>201905292214300_AddProductMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905292319306_AddModelsMigration.cs" />
+    <Compile Include="Migrations\201905292319306_AddModelsMigration.Designer.cs">
+      <DependentUpon>201905292319306_AddModelsMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905292344135_ExtendedSupplyMigration.cs" />
+    <Compile Include="Migrations\201905292344135_ExtendedSupplyMigration.Designer.cs">
+      <DependentUpon>201905292344135_ExtendedSupplyMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Consumer.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Models\Supply.cs" />
     <Compile Include="WarehouseOfIndustrialGoodsContext.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -99,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905292214300_AddProductMigration.resx">
       <DependentUpon>201905292214300_AddProductMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905292319306_AddModelsMigration.resx">
+      <DependentUpon>201905292319306_AddModelsMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905292344135_ExtendedSupplyMigration.resx">
+      <DependentUpon>201905292344135_ExtendedSupplyMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

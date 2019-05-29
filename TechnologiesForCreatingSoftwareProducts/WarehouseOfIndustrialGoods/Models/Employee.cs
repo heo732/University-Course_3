@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WarehouseOfIndustrialGoods.Models
 {
-    public class Product
+    public class Employee
     {
         #region Properties
 
@@ -20,7 +20,7 @@ namespace WarehouseOfIndustrialGoods.Models
 
         #region Constructors
 
-        public Product()
+        public Employee()
         {
             Supplies = new List<Supply>();
         }
