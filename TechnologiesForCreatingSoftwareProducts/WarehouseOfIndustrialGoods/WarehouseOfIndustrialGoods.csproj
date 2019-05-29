@@ -60,7 +60,12 @@
     <Compile Include="Migrations\201905292147382_InitialMigration.Designer.cs">
       <DependentUpon>201905292147382_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905292214300_AddProductMigration.cs" />
+    <Compile Include="Migrations\201905292214300_AddProductMigration.Designer.cs">
+      <DependentUpon>201905292214300_AddProductMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="WarehouseOfIndustrialGoodsContext.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +97,9 @@
     <EmbeddedResource Include="Migrations\201905292147382_InitialMigration.resx">
       <DependentUpon>201905292147382_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905292214300_AddProductMigration.resx">
+      <DependentUpon>201905292214300_AddProductMigration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -104,9 +112,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="EntityFramework">
       <Version>6.2.0</Version>
