@@ -29,6 +29,9 @@ namespace WarehouseOfIndustrialGoods.Windows
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             await DB.Supplies.LoadAsync();
+            await DB.Products.LoadAsync();
+            await DB.Employees.LoadAsync();
+            await DB.Suppliers.LoadAsync();
             listViewSupplies.ItemsSource = DB.Supplies.Local.ToBindingList();
         }
 
