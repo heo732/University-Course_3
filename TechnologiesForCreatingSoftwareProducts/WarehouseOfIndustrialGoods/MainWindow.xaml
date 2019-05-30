@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WarehouseOfIndustrialGoods"
         mc:Ignorable="d"
         Title="Warehouse of industrial goods" Height="450" Width="800" Initialized="Window_Initialized">
-    <Grid>
-        
-    </Grid>
+    <StackPanel Margin="50">
+        <Button Content="Supplies" Height="50" Width="200" Click="Button_Click" />
+    </StackPanel>
 </Window>
