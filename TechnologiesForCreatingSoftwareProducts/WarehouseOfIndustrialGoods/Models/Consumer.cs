@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WarehouseOfIndustrialGoods.Models
 {
@@ -12,6 +13,17 @@ namespace WarehouseOfIndustrialGoods.Models
         [Required]
         public string Name { get; set; }
 
+        public ICollection<Shipment> Shipments { get; set; }
+
         #endregion Properties
+
+        #region Constructors
+
+        public Consumer()
+        {
+            Shipments = new List<Shipment>();
+        }
+
+        #endregion Constructors
     }
 }

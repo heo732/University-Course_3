@@ -13,7 +13,6 @@ namespace WarehouseOfIndustrialGoods.Models
         [Required]
         public string Name { get; set; }
 
-        [ConcurrencyCheck]
         public ICollection<Supply> Supplies { get; set; }
 
         #endregion Properties

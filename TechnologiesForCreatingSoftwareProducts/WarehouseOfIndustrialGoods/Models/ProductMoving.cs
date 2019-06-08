@@ -40,6 +40,10 @@ namespace WarehouseOfIndustrialGoods.Models
         [ForeignKey("TargetPlaceId")]
         public WarehousePlace TargetPlace { get; set; }
 
+        public Supply Supply { get; set; }
+
+        public Shipment Shipment { get; set; }
+
         #endregion Properties
     }
 }
