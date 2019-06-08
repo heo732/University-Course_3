@@ -17,6 +17,10 @@ namespace WarehouseOfIndustrialGoods
 
         public DbSet<Supply> Supplies { get; set; }
 
+        public DbSet<WarehousePlace> WarehousePlaces { get; set; }
+
+        public DbSet<ProductMoving> ProductMovings { get; set; }
+
         #endregion Properties
 
         #region Constructors

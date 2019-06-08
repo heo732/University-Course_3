@@ -13,8 +13,9 @@ namespace WarehouseOfIndustrialGoods.Models
         [Required]
         public string Name { get; set; }
 
-        [ConcurrencyCheck]
         public ICollection<Supply> Supplies { get; set; }
+
+        public ICollection<ProductMoving> ProductMovings { get; set; }
 
         #endregion Properties
 
@@ -23,6 +24,7 @@ namespace WarehouseOfIndustrialGoods.Models
         public Employee()
         {
             Supplies = new List<Supply>();
+            ProductMovings = new List<ProductMoving>();
         }
 
         #endregion Constructors

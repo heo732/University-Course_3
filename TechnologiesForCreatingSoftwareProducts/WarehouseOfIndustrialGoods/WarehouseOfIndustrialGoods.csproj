@@ -56,28 +56,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Migrations\201905292147382_InitialMigration.cs" />
-    <Compile Include="Migrations\201905292147382_InitialMigration.Designer.cs">
-      <DependentUpon>201905292147382_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905292214300_AddProductMigration.cs" />
-    <Compile Include="Migrations\201905292214300_AddProductMigration.Designer.cs">
-      <DependentUpon>201905292214300_AddProductMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905292319306_AddModelsMigration.cs" />
-    <Compile Include="Migrations\201905292319306_AddModelsMigration.Designer.cs">
-      <DependentUpon>201905292319306_AddModelsMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905292344135_ExtendedSupplyMigration.cs" />
-    <Compile Include="Migrations\201905292344135_ExtendedSupplyMigration.Designer.cs">
-      <DependentUpon>201905292344135_ExtendedSupplyMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Consumer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductMoving.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\Supply.cs" />
+    <Compile Include="Models\WarehousePlace.cs" />
     <Compile Include="WarehouseOfIndustrialGoodsContext.cs" />
     <Compile Include="Windows\SuppliesWindow.xaml.cs">
       <DependentUpon>SuppliesWindow.xaml</DependentUpon>
@@ -113,18 +98,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201905292147382_InitialMigration.resx">
-      <DependentUpon>201905292147382_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905292214300_AddProductMigration.resx">
-      <DependentUpon>201905292214300_AddProductMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905292319306_AddModelsMigration.resx">
-      <DependentUpon>201905292319306_AddModelsMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905292344135_ExtendedSupplyMigration.resx">
-      <DependentUpon>201905292344135_ExtendedSupplyMigration.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
