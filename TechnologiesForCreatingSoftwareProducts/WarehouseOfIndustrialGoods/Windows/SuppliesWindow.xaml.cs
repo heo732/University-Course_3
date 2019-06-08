@@ -32,6 +32,8 @@ namespace WarehouseOfIndustrialGoods.Windows
             await DB.Products.LoadAsync();
             await DB.Employees.LoadAsync();
             await DB.Suppliers.LoadAsync();
+            await DB.WarehousePlaces.LoadAsync();
+            await DB.ProductMovings.LoadAsync();
             listViewSupplies.ItemsSource = DB.Supplies.Local.ToBindingList();
         }
 

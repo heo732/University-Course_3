@@ -13,8 +13,6 @@ namespace WarehouseOfIndustrialGoods.Models
         [Required]
         public string Name { get; set; }
 
-        public ICollection<Supply> Supplies { get; set; }
-
         public ICollection<ProductMoving> ProductMovings { get; set; }
 
         #endregion Properties
@@ -23,7 +21,6 @@ namespace WarehouseOfIndustrialGoods.Models
 
         public Product()
         {
-            Supplies = new List<Supply>();
             ProductMovings = new List<ProductMoving>();
         }
 

@@ -5,18 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WarehouseOfIndustrialGoods.Windows"
         mc:Ignorable="d"
-        Title="Supplies" Height="450" Width="800"
+        Title="Постачання" Height="450" Width="800"
         Loaded="Window_Loaded">
     <Grid>
         <ListView Name="listViewSupplies" Margin="20">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Id}" />
-                    <GridViewColumn Header="Product" Width="100" DisplayMemberBinding="{Binding Product.Name}" />
-                    <GridViewColumn Header="Supplier" Width="100" DisplayMemberBinding="{Binding Supplier.Name}" />
-                    <GridViewColumn Header="Employee" Width="100" DisplayMemberBinding="{Binding Employee.Name}" />
-                    <GridViewColumn Header="CountOfProduct" Width="100" DisplayMemberBinding="{Binding CountOfProduct}" />
-                    <GridViewColumn Header="DateTime" Width="100" DisplayMemberBinding="{Binding DateTime}" />
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="Товар" DisplayMemberBinding="{Binding ProductMoving.Product.Name}" />
+                    <GridViewColumn Header="Постачальник" DisplayMemberBinding="{Binding Supplier.Name}" />
+                    <GridViewColumn Header="Працівник що прийняв поставку" DisplayMemberBinding="{Binding ProductMoving.Employee.Name}" />
+                    <GridViewColumn Header="Кількість товару" DisplayMemberBinding="{Binding ProductMoving.CountOfProduct}" />
+                    <GridViewColumn Header="Дата й час поставки" DisplayMemberBinding="{Binding ProductMoving.DateTime}" />
+                    <GridViewColumn Header="Складське місце" DisplayMemberBinding="{Binding ProductMoving.TargetPlace.Name}" />
                 </GridView>
             </ListView.View>
         </ListView>

@@ -1,5 +1,4 @@
-﻿using System.Data.Entity;
-using System.Windows;
+﻿using System.Windows;
 using WarehouseOfIndustrialGoods.Windows;
 
 namespace WarehouseOfIndustrialGoods
@@ -26,9 +25,8 @@ namespace WarehouseOfIndustrialGoods
 
         #region Methods
 
-        private async void Window_Initialized(object sender, System.EventArgs e)
+        private void Window_Initialized(object sender, System.EventArgs e)
         {
-            await DB.Products.LoadAsync();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

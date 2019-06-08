@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WarehouseOfIndustrialGoods"
         mc:Ignorable="d"
-        Title="Warehouse of industrial goods" Height="450" Width="800" Initialized="Window_Initialized">
+        Title="Склад – промислові товари" Height="450" Width="800" Initialized="Window_Initialized">
     <StackPanel Margin="50">
-        <Button Content="Supplies" Height="50" Width="200" Click="Button_Click" />
+        <Button Content="Постачання" Height="50" Width="200" Click="Button_Click" />
     </StackPanel>
 </Window>
