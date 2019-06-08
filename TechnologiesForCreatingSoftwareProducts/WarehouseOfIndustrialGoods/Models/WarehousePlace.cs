@@ -20,6 +20,8 @@ namespace WarehouseOfIndustrialGoods.Models
         [InverseProperty("TargetPlace")]
         public ICollection<ProductMoving> ProductMovingsTarget { get; set; }
 
+        public ICollection<Preparation> Preparations { get; set; }
+
         #endregion Properties
 
         #region Constructors
@@ -28,6 +30,7 @@ namespace WarehouseOfIndustrialGoods.Models
         {
             ProductMovingsSource = new List<ProductMoving>();
             ProductMovingsTarget = new List<ProductMoving>();
+            Preparations = new List<Preparation>();
         }
 
         #endregion Constructors

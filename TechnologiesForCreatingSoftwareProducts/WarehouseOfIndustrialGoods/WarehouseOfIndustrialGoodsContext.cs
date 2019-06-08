@@ -19,6 +19,8 @@ namespace WarehouseOfIndustrialGoods
 
         public DbSet<Shipment> Shipments { get; set; }
 
+        public DbSet<Preparation> Preparations { get; set; }
+
         public DbSet<WarehousePlace> WarehousePlaces { get; set; }
 
         public DbSet<ProductMoving> ProductMovings { get; set; }

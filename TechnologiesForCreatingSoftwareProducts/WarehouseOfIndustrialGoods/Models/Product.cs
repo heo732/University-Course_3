@@ -15,6 +15,8 @@ namespace WarehouseOfIndustrialGoods.Models
 
         public ICollection<ProductMoving> ProductMovings { get; set; }
 
+        public ICollection<Preparation> Preparations { get; set; }
+
         #endregion Properties
 
         #region Constructors
@@ -22,6 +24,7 @@ namespace WarehouseOfIndustrialGoods.Models
         public Product()
         {
             ProductMovings = new List<ProductMoving>();
+            Preparations = new List<Preparation>();
         }
 
         #endregion Constructors

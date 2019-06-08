@@ -58,6 +58,7 @@
     </ApplicationDefinition>
     <Compile Include="Models\Consumer.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Preparation.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductMoving.cs" />
     <Compile Include="Models\Shipment.cs" />
