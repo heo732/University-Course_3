@@ -65,10 +65,10 @@
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\Supply.cs" />
     <Compile Include="Models\WarehousePlace.cs" />
-    <Compile Include="WarehouseOfIndustrialGoodsContext.cs" />
-    <Compile Include="Windows\SuppliesWindow.xaml.cs">
-      <DependentUpon>SuppliesWindow.xaml</DependentUpon>
+    <Compile Include="Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WarehouseOfIndustrialGoodsContext.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,7 +81,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\SuppliesWindow.xaml">
+    <Page Include="Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

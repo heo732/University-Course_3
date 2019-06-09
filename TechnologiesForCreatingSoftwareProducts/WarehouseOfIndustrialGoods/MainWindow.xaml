@@ -5,8 +5,4 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WarehouseOfIndustrialGoods"
         mc:Ignorable="d"
-        Title="Склад – промислові товари" Height="450" Width="800" Initialized="Window_Initialized">
-    <StackPanel Margin="50">
-        <Button Content="Постачання" Height="50" Width="200" Click="Button_Click" />
-    </StackPanel>
-</Window>
+        Title="" Height="450" Width="800" Initialized="Window_Initialized"/>

@@ -1,5 +1,6 @@
 ﻿using System.Windows;
-using WarehouseOfIndustrialGoods.Windows;
+using System.Data.Entity;
+using WarehouseOfIndustrialGoods.Pages;
 
 namespace WarehouseOfIndustrialGoods
 {
@@ -27,11 +28,7 @@ namespace WarehouseOfIndustrialGoods
 
         private void Window_Initialized(object sender, System.EventArgs e)
         {
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            new SuppliesWindow(DB).Show();
+            Content = new MainPage(DB);
         }
 
         #endregion Methods
