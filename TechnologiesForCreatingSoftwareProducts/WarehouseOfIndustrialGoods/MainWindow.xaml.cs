@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Controls;
 using WarehouseOfIndustrialGoods.Pages;
 
 namespace WarehouseOfIndustrialGoods
@@ -10,7 +12,13 @@ namespace WarehouseOfIndustrialGoods
     {
         #region Properties
 
-        private WarehouseOfIndustrialGoodsContext DB { get; } = new WarehouseOfIndustrialGoodsContext();
+        public static WarehouseOfIndustrialGoodsContext DB { get; } = new WarehouseOfIndustrialGoodsContext();
+
+        public Dictionary<string, Page> Pages { get; } = new Dictionary<string, Page>
+        {
+            { "Main", new MainPage(DB) },
+            { "Products", new  }
+        };
 
         #endregion Properties
 

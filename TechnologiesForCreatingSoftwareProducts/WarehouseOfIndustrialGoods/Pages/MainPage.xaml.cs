@@ -8,13 +8,13 @@ namespace WarehouseOfIndustrialGoods.Pages
     /// </summary>
     public partial class MainPage : Page
     {
-        private WarehouseOfIndustrialGoodsContext DB { get; }
+        private MainWindow MainWindow { get; }
 
-        public MainPage(WarehouseOfIndustrialGoodsContext db)
+        public MainPage(MainWindow window)
         {
             InitializeComponent();
             WindowTitle = "Склад - промислові товари";
-            DB = db;
+            MainWindow = window;
         }
 
         private void SuppliesButton_Click(object sender, RoutedEventArgs e)
