@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using System.Data.Entity;
 using WarehouseOfIndustrialGoods.Pages;
 
 namespace WarehouseOfIndustrialGoods
