@@ -11,6 +11,7 @@
     <Page.Resources>
         <Style TargetType="Button" x:Key="MainButtonStyle">
             <Setter Property="Margin" Value="10" />
+            <Setter Property="FontSize" Value="24" />
         </Style>
     </Page.Resources>
 

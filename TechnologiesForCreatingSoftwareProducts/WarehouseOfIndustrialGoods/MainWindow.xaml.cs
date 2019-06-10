@@ -28,7 +28,8 @@ namespace WarehouseOfIndustrialGoods
             Pages = new Dictionary<string, Page>
             {
                 { "Main", new MainPage(this) },
-                { "Products", new  ProductsPage(this)}
+                { "Products", new  ProductsPage(this)},
+                { "ProductAdd", new  ProductAddPage(this)}
             };
 
             SwitchPage("Main");
@@ -43,17 +44,17 @@ namespace WarehouseOfIndustrialGoods
             Content = Pages[page];
         }
 
-        private async void Window_Initialized(object sender, System.EventArgs e)
+        private void Window_Initialized(object sender, System.EventArgs e)
         {
-            await DB.Consumers.LoadAsync();
-            await DB.Employees.LoadAsync();
-            await DB.Preparations.LoadAsync();
-            await DB.Products.LoadAsync();
-            await DB.ProductMovings.LoadAsync();
-            await DB.Shipments.LoadAsync();
-            await DB.Suppliers.LoadAsync();
-            await DB.Supplies.LoadAsync();
-            await DB.WarehousePlaces.LoadAsync();
+            DB.Consumers.Load();
+            DB.Employees.Load();
+            DB.Preparations.Load();
+            DB.Products.Load();
+            DB.ProductMovings.Load();
+            DB.Shipments.Load();
+            DB.Suppliers.Load();
+            DB.Supplies.Load();
+            DB.WarehousePlaces.Load();
         }
 
         #endregion Methods
