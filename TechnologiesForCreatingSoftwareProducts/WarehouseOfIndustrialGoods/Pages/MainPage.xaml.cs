@@ -8,18 +8,35 @@ namespace WarehouseOfIndustrialGoods.Pages
     /// </summary>
     public partial class MainPage : Page
     {
-        private MainWindow MainWindow { get; }
+        #region Constructors
 
-        public MainPage(MainWindow window)
+        public MainPage(MainWindow mainWindow)
         {
             InitializeComponent();
             WindowTitle = "Склад - промислові товари";
-            MainWindow = window;
+            MainWindow = mainWindow;
         }
+
+        #endregion Constructors
+
+        #region Properties
+
+        private MainWindow MainWindow { get; }
+
+        #endregion Properties
+
+        #region Methods
 
         private void SuppliesButton_Click(object sender, RoutedEventArgs e)
         {
             //
+        }
+
+        #endregion Methods
+
+        private void ProductsButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.SwitchPage("Products");
         }
     }
 }
