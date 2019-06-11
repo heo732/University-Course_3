@@ -76,5 +76,17 @@ namespace WarehouseOfIndustrialGoods.Pages
                 }
             }
         }
+
+        private void ProductsEditButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (productsListView.SelectedItem == null)
+            {
+                MessageBox.Show("Оберіть запис для редагування");
+                return;
+            }
+
+            MainWindow.SwitchPage("ProductEdit");
+            MainWindow.SetTargetElementInProductEditPage(productsListView.SelectedItem as Product);
+        }
     }
 }

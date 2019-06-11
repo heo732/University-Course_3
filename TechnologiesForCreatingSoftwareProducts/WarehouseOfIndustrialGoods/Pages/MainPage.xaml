@@ -26,7 +26,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <Button Name="suppliesButton" Content="Постачання" Click="SuppliesButton_Click" Grid.Column="1" Style="{StaticResource MainButtonStyle}" />
+        <!--<Button Name="suppliesButton" Content="Постачання" Click="SuppliesButton_Click" Grid.Column="1" Style="{StaticResource MainButtonStyle}" />-->
         <Button Name="productsButton" Content="Продукти" Click="ProductsButton_Click" Grid.Column="1" Grid.Row="1" Style="{StaticResource MainButtonStyle}" />
     </Grid>
 </Page>

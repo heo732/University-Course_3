@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Windows;
 using System.Windows.Controls;
+using WarehouseOfIndustrialGoods.Models;
 using WarehouseOfIndustrialGoods.Pages;
 
 namespace WarehouseOfIndustrialGoods
@@ -29,7 +30,8 @@ namespace WarehouseOfIndustrialGoods
             {
                 { "Main", new MainPage(this) },
                 { "Products", new  ProductsPage(this)},
-                { "ProductAdd", new  ProductAddPage(this)}
+                { "ProductAdd", new  ProductAddPage(this)},
+                { "ProductEdit", new  ProductEditPage(this)}
             };
 
             SwitchPage("Main");
@@ -42,6 +44,12 @@ namespace WarehouseOfIndustrialGoods
         public void SwitchPage(string page)
         {
             Content = Pages[page];
+        }
+
+        public void SetTargetElementInProductEditPage(Product product)
+        {
+            (Pages["ProductEdit"] as ProductEditPage).TargetElement = product;
+            (Pages["ProductEdit"] as ProductEditPage).productEditNameTextBox.Text = product.Name;
         }
 
         private void Window_Initialized(object sender, System.EventArgs e)
